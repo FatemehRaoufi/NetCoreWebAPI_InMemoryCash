@@ -18,9 +18,7 @@ namespace NetCore_InMemoryCash.Controllers
         private readonly IMemoryCache _cache;
 
         private readonly ILogger<EmployeeController> _logger;
-        public EmployeeController(IEmployeeService dataRepository,
-            IMemoryCache cache,
-            ILogger<EmployeeController> logger)
+        public EmployeeController(IEmployeeService dataRepository,IMemoryCache cache,ILogger<EmployeeController> logger)                      
         {
             _dataRepository = dataRepository ?? throw new ArgumentNullException(nameof(dataRepository));
             _cache = cache ?? throw new ArgumentNullException(nameof(cache));
