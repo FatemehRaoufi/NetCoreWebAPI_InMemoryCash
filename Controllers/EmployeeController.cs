@@ -15,9 +15,9 @@ namespace NetCore_InMemoryCash.Controllers
         private const string employeeListCacheKey = "employeeList";
         private readonly IEmployeeService _dataRepository;
 
-        private IMemoryCache _cache;
+        private readonly IMemoryCache _cache;
 
-        private ILogger<EmployeeController> _logger;
+        private readonly ILogger<EmployeeController> _logger;
         public EmployeeController(IEmployeeService dataRepository,
             IMemoryCache cache,
             ILogger<EmployeeController> logger)
