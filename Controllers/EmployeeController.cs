@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc; //[Microsoft.AspNetCore.Mvc.HttpGet]
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Memory;////Installing "Microsoft.Extensions.Caching.Memory" from Nuget
 using NetCoreWebAPI_InMemoryCash.Models;
 using NetCoreWebAPI_InMemoryCash.Services;
 using System.Net;
